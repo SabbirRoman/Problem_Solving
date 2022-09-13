@@ -1,2 +1,6 @@
-Case 1: Peaceful
-Case 2: Peaceful
+2
+0
+1
+3
+1
+3
