@@ -40,6 +40,7 @@ I decided to make this repository public because:
 
 ## 👨‍💻 Author
 - **Sabbir Hasan Roman**  
+- Email : sabbir.hasan.cse.ru@gmail.com
 - Competitive programmer & developer  
 - Coding Handles:  
   - [Codeforces](https://codeforces.com/profile/Roman_Emper0r)  
