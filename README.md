@@ -8,7 +8,7 @@ It contains the solutions I wrote while practicing and participating in contests
 ---
 
 ## 🚀 About This Repo
-- Most of the code here was written during contests (around **2019**).
+- Most of the code here was written during contests since **2020**.
 - The solutions are **messy, unoptimized, and sometimes even hard to read** – but that’s the reality of contest coding.
 - It reflects my **growth as a programmer** – from struggling with simple implementation problems to gradually solving **Dynamic Programming** and **Graph** challenges.
 - This repository is not meant to be a learning resource for others.  
