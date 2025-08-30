@@ -46,6 +46,7 @@ I decided to make this repository public because:
   - [Codeforces](https://codeforces.com/profile/Roman_Emper0r)  
   - [CodeChef](https://www.codechef.com/users/roman_emper0r)  
   - [AtCoder](https://atcoder.jp/Roman_Emper0r/)  
+  - [LeetCode](https://leetcode.com/u/Roman_Emper0r/)  
 - Currently exploring **Java, Spring Boot, and full-stack development**.
 
 ---
