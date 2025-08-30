@@ -1,0 +1,79 @@
+/**
+ *    author:  Roman_Emper0r
+ *    created: 24-09-2023  20:35:00
+**/
+#include<bits/stdc++.h>
+
+using namespace std;
+const int mod = 1e9 + 7;
+#define FOR(a,b) for(int i=a;i<(int)b;i++)
+#define FORr(a,b) for(int i =a;i>=(int)b;i--)
+
+#define print(arr)  for(auto a: arr) cout << a<< " "; cout << endl;
+#define in(a) int a; cin >> a;
+#define inp(arr,n) vector<int>arr(n); for(auto &a: arr) cin >> a;
+#define pb emplace_back
+
+#define mp make_pair
+#define f first
+#define vi vector<int>
+#define s second
+#define ll long long
+#define          all(v)              v.begin(), v.end()
+#define         rall(v)              v.rbegin(),v.rend()
+#define          sz(a)               (int)a.size()
+#define lpr pair<long long int,long long int>
+#define nl '\n'
+#define ii pair<int, int>
+#define yes cout<<"YES\n";
+#define no cout<<"NO\n";
+
+
+
+void solve(){
+    
+   ll n;
+   cin>>n;
+   ll pos=0,neg=0;
+   vector<ll>vect;
+   for(int i=0; i<n; i++)
+   {
+    ll tm;
+    cin>>tm;
+    vect.emplace_back(tm);
+    if(tm<=0) neg+=tm;
+    else pos+=tm;
+   }
+   if(abs(neg)==pos) no
+    else
+    {
+        yes
+        sort(vect.begin(), vect.end());
+        if(abs(neg)<pos) for(int i=n-1; i>=0; i--)cout<<vect[i]<<" ";
+        else for(int i=0; i<n; i++) cout<<vect[i]<<" ";
+        cout<<endl;
+    }
+return;
+
+}
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+     #ifndef ONLINE_JUDGE
+    freopen("input.txt","r",stdin) ;
+    freopen("output.txt","w",stdout);
+ #endif
+       int  t=1;
+      cin>>t ;
+       
+        
+    
+       while(t--){
+       
+           solve() ;
+       }
+       return 0 ;
+
+}
+
+

@@ -1,0 +1,103 @@
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+#include <bits/stdc++.h>
+#include <functional>
+
+using namespace __gnu_pbds;
+using namespace std;
+
+#define  pb          push_back
+#define  pk          pop_back
+#define  mpr         make_pair
+#define  ff          first
+#define  ss          second
+#define  endl        "\n"
+#define  pi          2*acos(0.0)
+#define  ll          long long int
+#define  pii         pair<int, int>
+#define  vi          vector<int>
+#define  vll         vector<ll> 
+#define  ms(a,v)     memset(a,v,sizeof(a))
+#define  dbg         cout<<"Heyyyyy"<<endl
+#define  all(a)      a.begin(), a.end()
+#define  watch(x)    cerr<<"\n"<<(#x)<<" is "<<(x)<<endl
+
+template < class T > T gcd(T a, T b){
+    return (b != 0 ? gcd<T>(b, a%b) : a);
+}
+template < class T > T lcm(T a, T b){
+    return (a / gcd<T>(a, b) * b); 
+}
+template < class T > inline T bigmod(T p,T e,T M){
+    if(e==0) return 1;
+    if(e%2==0){ll t=bigmod(p,e/2,M);return (T)((t*t)%M);}
+    return (T)((ll)bigmod(p,e-1,M)*(ll)p)%M;
+}
+typedef tree<int, null_type, less<int>, rb_tree_tag,
+             tree_order_statistics_node_update>
+    ordered_set;
+typedef tree<pair<int, int>, null_type, less<pair<int, int> >,
+             rb_tree_tag, tree_order_statistics_node_update>
+    ordered_map;
+inline ll mod(ll a, ll m){
+    return (a % m + m) % m;
+}
+
+int dx[8]={0, 1, 0, -1, -1, -1, 1, 1};
+int dy[8]={1, 0, -1, 0, -1, 1, -1, 1};
+const double eps = 1e-9;
+const int MOD = 1e9 + 7;
+const ll  INF = 1e18;
+const int MX = INT_MAX;
+const int MN = INT_MIN;
+
+void solve(){
+   int n, m;
+   cin>>n>>m;
+   set<int> st;
+   vi a(m+5);
+   for(int i = 1; i <= n; i++){
+   	st.insert(i);
+   }
+   for(int i = 0 ; i < m; i++){
+   	cin>>a[i];
+   	st.erase(st.find(a[i]));
+   }
+   for(int i = 0; i < m; i++){
+   		while(true){
+   			if(!st.size()) break;
+   			auto ok  = st.begin();
+   			if(*ok < a[i]){
+   				cout<<*ok<<endl;
+   				st.erase(ok);
+   			}
+   			else break;
+   	}
+   	cout<<a[i]<<endl;
+   }
+   while(true){
+   	if(!st.size()) break;
+   	auto xx = st.begin();
+   	cout<<*xx<<endl;
+   	st.erase(xx);
+   }
+    
+}
+signed main(){
+
+    ios_base::sync_with_stdio(false);cin.tie(NULL);
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+
+    //ll test_case = 1;
+
+    int tc = 1;
+   // cin>>tc;
+    while(tc--){
+        //cout<<"Case "<<test_case<<": ";
+        //test_case++;
+        solve();
+    }
+}

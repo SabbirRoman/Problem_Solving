@@ -1,0 +1,9 @@
+Hi everyone, I'm Sabbir Hasan Roman!  I just graduated with a stellar GPA of 4.67 in Computer Science and Engineering from the University of Rajshahi.
+
+Software development is my passion. I've got a strong foundation in algorithms, data structures, and databases, and I'm proficient in C++, Python, Django, and Git. My coding skills are sharp, honed by solving over 1,200 problems on online judges and participating in more than 200 programming contests.
+
+Dedication? You bet! My competitive spirit is proven by my 140th place finish at the ICPC Dhaka Regional Preliminary 2023, my impressive 4-star Codechef rating, and a hard-earned 1713 Leetcode contest rating.
+
+But I'm not just about algorithms. I also built SANDESH, a personalized real-time news aggregator platform. It uses user profiling, content categorization, and a rule-based recommendation system to deliver an exceptional user experience.
+
+I'm eager to contribute to projects that make a difference. I want to tackle real-world challenges and keep growing my tech expertise.  Let's build something amazing together!
